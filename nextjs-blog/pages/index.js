@@ -35,16 +35,16 @@ export default function Home() {
 
 			<Head>
 				<title>Pavan Hutagi</title>
-				<link
-					rel="icon"
-					href="/favicon.ico"
-				/>
 			</Head>
 
 			<main>
 				<h1 className={styles.title}>Pavan Hutagi</h1>
-				<p className={styles.description}>I design & build websites.</p>
+				<code className={styles.description}>I design & build websites.</code>
 			</main>
+
+			<footer>
+				<a href="https://in.linkedin.com/in/pavan-hutagi"> Pavan Hutagi </a>
+			</footer>
 
 			<style jsx>{`
 				main {
@@ -58,13 +58,10 @@ export default function Home() {
 				footer {
 					width: 100%;
 					height: 100px;
-					border-top: 1px solid #eaeaea;
+					border-top: 1px solid #000000;
 					display: flex;
 					justify-content: center;
 					align-items: center;
-				}
-				footer img {
-					margin-left: 0.5rem;
 				}
 				footer a {
 					display: flex;
