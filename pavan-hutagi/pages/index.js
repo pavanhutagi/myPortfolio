@@ -1,6 +1,5 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
-
 import Particles from "react-particles";
 import { loadLinksPreset } from "tsparticles-preset-links";
 
