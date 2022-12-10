@@ -2,6 +2,7 @@ import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import Particles from "react-particles";
 import { loadLinksPreset } from "tsparticles-preset-links";
+import Typewriter from "typewriter-effect";
 
 export async function customInit(Engine) {
 	await loadLinksPreset(Engine);
@@ -38,7 +39,13 @@ export default function Home() {
 
 			<main>
 				<h1 className={styles.title}>Pavan Hutagi</h1>
-				<code className={styles.description}>I design & build websites.</code>
+				<code className={styles.description}>
+					<Typewriter
+						onInit={(typewriter) => {
+							typewriter.typeString("I design & build websites.").start();
+						}}
+					/>
+				</code>
 			</main>
 
 			<footer>
